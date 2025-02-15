@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Academy</title>
+    <title>Virtual Academy - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Virtual Academy</h1>
-        <p>Language: <span id="language">English</span></p>
-        <button onclick="toggleLanguage()">Switch Language</button>
+        
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+        </div>
 
-        <h2>Dashboard</h2>
-        <p>Course Progress: <span id="progress">40%</span></p>
-        <div class="progress-bar"><div id="progress-fill" style="width: 40%;"></div></div>
+        <div id="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="text" id="new-username" placeholder="Choose a Username">
+            <input type="password" id="new-password" placeholder="Choose a Password">
+            <button onclick="signup()">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
 
-        <h2>Courses</h2>
-        <ul>
-            <li>General Medicine</li>
-            <li>Emergency Care</li>
-            <li>Maternal & Child Health</li>
-        </ul>
-
-        <button onclick="increaseProgress()">Complete a Lesson</button>
+        <div id="dashboard" style="display: none;">
+            <h2>Welcome, <span id="user-name"></span>!</h2>
+            <button onclick="logout()">Logout</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
