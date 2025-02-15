@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     background: white;
@@ -13,23 +13,16 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-input {
+.progress-bar {
     width: 100%;
-    padding: 8px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: darkblue;
+#progress-fill {
+    height: 20px;
+    background: green;
+    border-radius: 10px;
 }

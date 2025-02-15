@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Academy</h1>
+        <p>Language: <span id="language">English</span></p>
+        <button onclick="toggleLanguage()">Switch Language</button>
+
+        <h2>Dashboard</h2>
+        <p>Course Progress: <span id="progress">40%</span></p>
+        <div class="progress-bar"><div id="progress-fill" style="width: 40%;"></div></div>
+
+        <h2>Courses</h2>
+        <ul>
+            <li>General Medicine</li>
+            <li>Emergency Care</li>
+            <li>Maternal & Child Health</li>
+        </ul>
+
+        <button onclick="increaseProgress()">Complete a Lesson</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
